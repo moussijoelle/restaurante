@@ -1,29 +1,27 @@
 # Restaurante — validar el pedido
 
-Formulario de pedido: eliges plato y restricciones alimentarias; el script te dice si puedes pedirlo.
+Formulario de pedido: eliges plato y marcas intolerancias; el script te dice si puedes pedirlo o no.
 
 ## Qué hace
 
-- Select de plato (carne, pasta, risotto…)
-- Checkboxes: vegano, sin lactosa, celíaco
-- Al validar, avisa si el plato choca con alguna restricción
-- Incluye guía en `guia-restaurante.html`
+- Platos: carne, pasta, risotto…
+- Checkboxes: vegano, lactosa, gluten
+- Mensaje claro si el plato choca con una restricción
+- Guía en `guia-restaurante.html`
 
 ## Cómo probarlo
 
-Abre `index.html` o la demo.
+Abre `index.html`.
 
 Demo: https://moussijoelle.github.io/restaurante/
 
 ## Cómo lo construí
 
-- HTML + JavaScript
-- Reglas en `app.js` (ej. carne + vegano → no puede)
-- Imágenes de apoyo en `img/`
+Reglas en `app.js` (por ejemplo carne + vegano → no). HTML + JS, sin framework.
 
 ## Cómo verificarlo
 
-Sin tests. Pruebo combinaciones válidas e inválidas (carne+vegano, pasta+gluten, risotto+lactosa) y miro el mensaje.
+Pruebo combinaciones que deben fallar (carne+vegano, pasta+gluten, risotto+lactosa) y una que pase limpia.
 
 ---
 
